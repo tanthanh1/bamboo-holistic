@@ -1,8 +1,8 @@
-const MainLayout = () => {
+const MainLayout = ({ children }) => {
     return (
         <html>
             <body>
-                <main>MainLayout</main>
+                <main>{children}</main>
             </body>
         </html>
     );

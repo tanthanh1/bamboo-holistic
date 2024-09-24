@@ -4,9 +4,9 @@ import Link from "next/link";
 const Box1 = () => {
     return (
         <div className="bg-primary">
-            <div className="flex  text-white pt-20 max-w-screen-lg mx-auto gap-10">
+            <div className="flex  text-white pt-10 max-w-screen-lg mx-auto gap-10">
                 <div className="flex-1">
-                    <h1 className="text-4xl font-bold">
+                    <h1 className="text-4xl font-bold mt-10">
                         Chăm Sóc Bằng Đôi Tay Hiểu Biết
                     </h1>
                     <p className="mt-6 text-lg">

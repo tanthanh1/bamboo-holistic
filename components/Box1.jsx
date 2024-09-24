@@ -22,7 +22,7 @@ const Box1 = () => {
                         </button>
                     </div>
                 </div>
-                <div className="flex-1">
+                <div className="flex-1 relative top-10">
                     <Image src={image1} alt="Picture of the author" />
                 </div>
             </div>

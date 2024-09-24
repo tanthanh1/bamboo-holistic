@@ -3,7 +3,7 @@ import image2 from "@/assets/images/2.png";
 import Link from "next/link";
 const Box2 = () => {
     return (
-        <div className="bg-white">
+        <div className="bg-white mt-10">
             <div className="flex  text-white pt-20 max-w-screen-lg mx-auto gap-10">
                 <div className="flex-1">
                     <Image src={image2} alt="Picture of the author" />

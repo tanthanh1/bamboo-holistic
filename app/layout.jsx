@@ -14,7 +14,7 @@ export const metadata = {
         "Chiropractic,Applied Kinesiology,Trị liệu thần kinh,Cơ xương khớp",
     description: "Chua lanh moi ton thuong",
 };
-const MainLayout = ({ children }) => {
+const MainLayout = () => {
     return (
         <html>
             <body>
@@ -25,7 +25,7 @@ const MainLayout = ({ children }) => {
                 <Box4 />
                 <Box5 />
                 <Footer />
-                <main>{children}</main>
+                <main></main>
             </body>
         </html>
     );

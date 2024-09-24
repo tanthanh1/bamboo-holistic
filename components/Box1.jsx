@@ -4,12 +4,12 @@ import Link from "next/link";
 const Box1 = () => {
     return (
         <div className="bg-primary">
-            <div className="flex  text-white pt-10 max-w-screen-lg mx-auto gap-10">
+            <div className="flex  text-white pt-10 max-w-[1080px]  mx-auto gap-28">
                 <div className="flex-1">
                     <h1 className="text-4xl font-bold mt-10">
                         Chăm Sóc Bằng Đôi Tay Hiểu Biết
                     </h1>
-                    <p className="mt-6 text-lg">
+                    <p className="mt-6 text-lg text-justify">
                         Bạn xứng đáng được sống một cuộc sống mạnh khỏe, không
                         đau đớn và chúng tôi ở đây để giúp bạn biến điều đó
                         thành hiện thực! Applied Kinesiology(AK) là một phương
@@ -22,7 +22,7 @@ const Box1 = () => {
                         </button>
                     </div>
                 </div>
-                <div className="flex-1 relative top-10">
+                <div className=" flex-0 relative top-10">
                     <Image src={image1} alt="Picture of the author" />
                 </div>
             </div>

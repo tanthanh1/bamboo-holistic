@@ -6,7 +6,7 @@ import Link from "next/link";
 const Box3 = () => {
     return (
         <div className="bg-secondary">
-            <div className="text-black pt-10 max-w-screen-lg mx-auto gap-10 px-10">
+            <div className="text-black pt-10 max-w-[1080px]  mx-auto gap-10 px-10">
                 <p className="text-center">Danh mục trị liệu</p>
                 <h2 className="text-xl font-bold text-center mt-2">
                     Điều trị tận gốc các vấn đề xương khớp

@@ -11,7 +11,7 @@ const Box3 = () => {
                 <h2 className="text-xl font-bold text-center mt-2">
                     Điều trị tận gốc các vấn đề xương khớp
                 </h2>
-                <div className="flex gap-10 mt-8 ">
+                <div className="flex flex-col lg:flex-row gap-10 mt-8 ">
                     <div className="flex-1 bg-white p-10">
                         <Image
                             className="block mx-auto"

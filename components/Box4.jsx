@@ -8,7 +8,7 @@ const Box4 = () => {
     return (
         <div className="bg-white py-10">
             <p className="text-center">Vì sao chọn Chúng Tôi</p>
-            <div className="grid grid-cols-2 gap-x-36 py-4 max-w-[1080px]  mx-auto gap-10 px-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2  gap-x-36 py-4 max-w-[1080px]  mx-auto gap-10 px-20">
                 <div>
                     <Image
                         className="block mx-auto"

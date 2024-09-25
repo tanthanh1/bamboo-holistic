@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="py-2 ">
             <div className="flex  max-w-[1080px]  mx-auto gap-10 px-20">
                 <div>
-                    <div className="flex-row flex">
+                    <div className=" flex-row flex">
                         <Image
                             className=""
                             src={logo2}

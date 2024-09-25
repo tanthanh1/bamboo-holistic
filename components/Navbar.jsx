@@ -1,3 +1,5 @@
+import Image from "next/image";
+import logo from "@/assets/images/logo1.png";
 const Navbar = () => {
     return (
         <div>
@@ -7,10 +9,11 @@ const Navbar = () => {
                         href="https://flowbite.com/"
                         className="flex flex-1 items-center space-x-3 rtl:space-x-reverse"
                     >
-                        <img
-                            src="https://flowbite.com/docs/images/logo.svg"
-                            class="h-8"
-                            alt="Flowbite Logo"
+                        <Image
+                            className=""
+                            src={logo}
+                            width={40}
+                            alt="Picture of the author"
                         />
                         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                             Bamboo Holistic

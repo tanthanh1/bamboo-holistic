@@ -12,7 +12,7 @@ export const metadata = {
     title: "Bamboo Holistic",
     keywords:
         "Chiropractic,Applied Kinesiology,Trị liệu thần kinh,Cơ xương khớp",
-    description: "Chua lanh moi ton thuong",
+    description: "Chữa lành mọi tổn thương của cơ thể",
 };
 const MainLayout = () => {
     return (

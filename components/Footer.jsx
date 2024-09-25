@@ -7,32 +7,16 @@ import image3 from "@/assets/images/a3.png";
 const Footer = () => {
     return (
         <div className="py-2 ">
-            <div className="flex  max-w-[1080px]  mx-auto gap-10 px-20">
-                <div>
-                    <div className=" flex-row flex">
-                        <Image
-                            className=""
-                            src={logo2}
-                            alt="Picture of the author"
-                        />
+            <div className="flex flex-col lg:flex-row max-w-[1080px]  mx-auto gap-10 px-20">
+                <div className="">
+                    <div className="">
+                        <Image className="" src={logo2} alt="Bamboo Holistic" />
                     </div>
-                    <div>
-                        <div className="flex-row flex gap-4">
-                            <Image
-                                className=""
-                                src={image1}
-                                alt="Picture of the author"
-                            />
-                            <Image
-                                className=""
-                                src={image2}
-                                alt="Picture of the author"
-                            />
-                            <Image
-                                className=""
-                                src={image3}
-                                alt="Picture of the author"
-                            />
+                    <div className="">
+                        <div className="flex-row flex gap-4 justify-center lg:justify-start">
+                            <Image className="" src={image1} alt="Youtuber" />
+                            <Image className="" src={image2} alt="Email" />
+                            <Image className="" src={image3} alt="Facebook" />
                         </div>
                     </div>
                 </div>

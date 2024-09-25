@@ -7,7 +7,7 @@ import image3 from "@/assets/images/a3.png";
 const Footer = () => {
     return (
         <div className="py-2 ">
-            <div className="flex flex-col lg:flex-row max-w-[1080px]  mx-auto gap-10 px-20">
+            <div className="flex flex-col lg:flex-row max-w-[1080px]  mx-auto lg:gap-10 px-20">
                 <div className="">
                     <div className="">
                         <Image className="" src={logo2} alt="Bamboo Holistic" />
@@ -21,13 +21,13 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="py-8 mx-auto">
+                <div className="mt-8 lg:mt-0 lg:py-8 mx-auto">
                     <p className="content-center font-bold">
                         Thời gian mở cửa:
                     </p>
                     <p className="content-center">Từ 9h đến 19h (T2-T7)</p>
                 </div>
-                <div className="py-8 mx-auto ">
+                <div className="my-8 lg:my-0 lg:py-8 mx-auto ">
                     <p className="content-center">Trang chủ</p>
                     <p className="content-center">Giới thiệu</p>
                     <p className="content-center">Danh mục trị liệu</p>

@@ -4,7 +4,7 @@ import Link from "next/link";
 const Box2 = () => {
     return (
         <div className="bg-white mt-10">
-            <div className="flex flex-col lg:flex-row text-white pt-10 lg:pt-20 pb-10 max-w-[1080px]  mx-auto gap-10 px-20">
+            <div className="flex flex-col lg:flex-row text-white pt-10 lg:pt-20 pb-10 max-w-[1080px]  mx-auto gap-10 px-8 lg:px-20">
                 <div className="flex-1">
                     <Image src={image2} alt="Picture of the author" />
                 </div>

@@ -1,12 +1,13 @@
 import Image from "next/image";
+import Link from "next/link";
 import logo from "@/assets/images/logo1.png";
 const Navbar = () => {
     return (
         <div>
             <nav class="bg-primary border-gray-200 dark:bg-gray-900 text-white  ">
                 <div className=" flex flex-wrap  items-center justify-between max-w-[1080px] mx-auto py-4 ">
-                    <a
-                        href="https://flowbite.com/"
+                    <Link
+                        href="/"
                         className="flex flex-1 items-center space-x-3 rtl:space-x-reverse"
                     >
                         <Image
@@ -18,7 +19,7 @@ const Navbar = () => {
                         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                             Bamboo Holistic
                         </span>
-                    </a>
+                    </Link>
                     <button
                         data-collapse-toggle="navbar-default"
                         type="button"
@@ -74,12 +75,12 @@ const Navbar = () => {
                                 </a>
                             </li>
                             <li>
-                                <a
-                                    href="#"
-                                    class="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                <Link
+                                    href="/contact"
+                                    className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                                 >
                                     Liên hệ
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>

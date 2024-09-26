@@ -60,7 +60,7 @@ const ContactPage = () => {
                     <h2 className="text-2xl font-bold">
                         Cần giải đáp thắc mắc?
                     </h2>
-                    <p>
+                    <p className="mt-2">
                         Bạn đang quan tâm đến việc cải thiện sức khỏe xương
                         khớp, hoặc bạn có vấn đề cần được tư vấn cho bản thân
                         (người thân/bạn bè)? Hãy gọi ngay cho chúng tôi hoặc để

@@ -10,7 +10,6 @@ const HomePage = () => {
             <Box2 />
             <Box3 />
             <Box4 />
-            <Box5 />
         </div>
     );
 };

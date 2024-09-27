@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import tel from "@/assets/images/tel.png";
 import email from "@/assets/images/email.png";
@@ -9,11 +11,17 @@ const ContactPage = () => {
         <div className="bg-secondary py-10">
             <div className="bg-white flex max-w-[1080px] mx-auto gap-16 p-6 ">
                 <div className="flex-1 ">
-                    <form className="">
+                    <form
+                        action="/api"
+                        method="POST"
+                        encType="multipart/form-data"
+                        className=""
+                    >
                         <div class="mb-5">
                             <input
-                                type="email"
-                                id="email"
+                                type="text"
+                                id="name"
+                                name="name"
                                 className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                 placeholder="Họ tên"
                                 required
@@ -22,8 +30,9 @@ const ContactPage = () => {
 
                         <div class="mb-5">
                             <input
-                                type="password"
-                                id="password"
+                                type="text"
+                                id="phone"
+                                name="phone"
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                 placeholder="Số điện thoại"
                                 required
@@ -31,8 +40,9 @@ const ContactPage = () => {
                         </div>
                         <div class="mb-5">
                             <input
-                                type="password"
-                                id="password"
+                                type="email"
+                                id="email"
+                                name="email"
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                 placeholder="Email"
                                 required
@@ -40,8 +50,8 @@ const ContactPage = () => {
                         </div>
                         <div class="mb-5">
                             <textarea
-                                type="password"
-                                id="password"
+                                id="content"
+                                name="content"
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                 placeholder="Vấn đề thắc mắc"
                                 required

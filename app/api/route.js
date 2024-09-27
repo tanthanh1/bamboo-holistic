@@ -19,7 +19,7 @@ export const POST = async (request) => {
         console.log(ticketData);
         const newTicket = new Ticket(ticketData);
         await newTicket.save();
-        return Response.redirect("https://bamboo-holistic.vercel.app/thankyou");
+        return Response.redirect(`${process.env.NEXTAUTH_URL}/thankyou}`);
     } catch (error) {
         return new Response("Failed to add property", { status: 500 });
     }

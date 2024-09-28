@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import logo2 from "@/assets/images/logo2.png";
 import image1 from "@/assets/images/a1.png";
 import image2 from "@/assets/images/a2.png";
@@ -28,10 +29,19 @@ const Footer = () => {
                     <p className="content-center">Từ 9h đến 19h (T2-T7)</p>
                 </div>
                 <div className="my-8 lg:my-0 lg:py-8 mx-auto ">
-                    <p className="content-center">Trang chủ</p>
-                    <p className="content-center">Giới thiệu</p>
-                    <p className="content-center">Danh mục trị liệu</p>
-                    <p className="content-center">Liên hệ</p>
+                    <Link href="/" className="content-center block">
+                        Trang chủ
+                    </Link>
+
+                    <Link href="/about" className="content-center block">
+                        Giới thiệu
+                    </Link>
+                    <Link href="/service" className="content-center block">
+                        Danh mục trị liệu
+                    </Link>
+                    <Link href="contact" className="content-center block">
+                        Liên hệ
+                    </Link>
                 </div>
             </div>
             <div className="border-t-2">

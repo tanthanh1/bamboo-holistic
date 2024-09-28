@@ -25,8 +25,8 @@ const page = () => {
                         bằng cách tìm ra nguồn gốc vấn đề, ưu tiên áp dụng các
                         phương pháp trị liệu tự nhiên an toàn, hiệu quả nhất.
                     </p>
-                    <div className="grid grid-cols-3 gap-20 ">
-                        <div>
+                    <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-20 ">
+                        <div className="border-b-2 pb-8 lg:border-b-0 lg:pb-0">
                             <Image
                                 className="text-center"
                                 src={image1}
@@ -46,7 +46,7 @@ const page = () => {
                                 Xem Tiếp
                             </button>
                         </div>
-                        <div>
+                        <div className="border-b-2 pb-8 lg:border-b-0 lg:pb-0">
                             <Image
                                 className=""
                                 src={image2}

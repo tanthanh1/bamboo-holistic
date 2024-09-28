@@ -16,10 +16,13 @@ const Box1 = () => {
                         pháp an toàn, không xâm lấn và thuận tự nhiên để giúp
                         bạn đạt được sức khỏe tối ưu cho cá nhân mình.
                     </p>
-                    <div className="mt-6 ">
-                        <button className="bg-white text-primary font-bold text-2xl p-4 rounded-sm">
+                    <div className="mt-8">
+                        <Link
+                            href="/"
+                            className="bg-white text-primary font-bold text-2xl p-4 rounded-sm"
+                        >
                             Đặt lịch khám
-                        </button>
+                        </Link>
                     </div>
                 </div>
                 <div className=" flex-0 lg:relative lg:top-10 ">

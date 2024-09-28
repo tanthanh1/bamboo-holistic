@@ -20,9 +20,12 @@ const Box2 = () => {
                         Osteopathy, Gonstead, Applied Kinesiology...
                     </p>
                     <div className="mt-6">
-                        <button className="bg-primary text-white font-semibold text-lg px-10 py-2 rounded-md">
+                        <Link
+                            href="/about"
+                            className="bg-primary text-white font-semibold text-lg px-10 py-2 rounded-md"
+                        >
                             Xem Tiếp
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>

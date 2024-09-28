@@ -39,10 +39,13 @@ const Box3 = () => {
                         <p className="text-center mt-4">Đau thần kinh toạ </p>
                     </div>
                 </div>
-                <div className="mt-6">
-                    <button className="bg-primary text-white font-semibold text-lg px-10 py-2 rounded-md block mx-auto">
+                <div className="mt-6 text-center">
+                    <Link
+                        href="/service"
+                        className="bg-primary text-white font-semibold text-lg px-10 py-2 rounded-md"
+                    >
                         Xem Tất Cả Danh Mục
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>

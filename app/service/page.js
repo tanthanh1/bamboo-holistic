@@ -28,7 +28,7 @@ const page = () => {
                     <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-20 ">
                         <div className="border-b-2 pb-8 lg:border-b-0 lg:pb-0">
                             <Image
-                                className="text-center"
+                                className="mx-auto lg:mx-0"
                                 src={image1}
                                 alt="Dau co vai gay"
                             />
@@ -42,13 +42,18 @@ const page = () => {
                                 động khớp cổ ảnh hưởng tới chất lượng cuộc sống
                                 và năng suất làm việc.
                             </p>
-                            <button className="bg-primary text-white font-semibold  px-8 py-2 rounded-md mt-4">
-                                Xem Tiếp
-                            </button>
+                            <div className="mt-4 text-center">
+                                <Link
+                                    href="/"
+                                    className="bg-primary text-white font-semibold  px-8 py-2 rounded-md"
+                                >
+                                    Xem Tiếp
+                                </Link>
+                            </div>
                         </div>
                         <div className="border-b-2 pb-8 lg:border-b-0 lg:pb-0">
                             <Image
-                                className=""
+                                className="mx-auto lg:mx-0"
                                 src={image2}
                                 alt="Dau co vai gay"
                             />
@@ -65,13 +70,18 @@ const page = () => {
                                 giữa lưng) hoặc cột sống thắt lưng (phần lưng
                                 dưới).
                             </p>
-                            <button className="bg-primary text-white font-semibold  px-8 py-2 rounded-md mt-4">
-                                Xem Tiếp
-                            </button>
+                            <div className="mt-4 text-center">
+                                <Link
+                                    href="/"
+                                    className="bg-primary text-white font-semibold  px-8 py-2 rounded-md"
+                                >
+                                    Xem Tiếp
+                                </Link>
+                            </div>
                         </div>
-                        <div>
+                        <div className="border-b-2 pb-8 lg:border-b-0 lg:pb-0">
                             <Image
-                                className=""
+                                className="mx-auto lg:mx-0"
                                 src={image3}
                                 alt="Dau co vai gay"
                             />
@@ -85,13 +95,18 @@ const page = () => {
                                 người bệnh và có thể gây suy giảm chức năng vận
                                 động.
                             </p>
-                            <button className="bg-primary text-white font-semibold  px-8 py-2 rounded-md mt-4">
-                                Xem Tiếp
-                            </button>
+                            <div className="mt-4 text-center">
+                                <Link
+                                    href="/"
+                                    className="bg-primary text-white font-semibold  px-8 py-2 rounded-md"
+                                >
+                                    Xem Tiếp
+                                </Link>
+                            </div>
                         </div>
-                        <div>
+                        <div className="border-b-2 pb-8 lg:border-b-0 lg:pb-0">
                             <Image
-                                className=""
+                                className="mx-auto lg:mx-0"
                                 src={image4}
                                 alt="Dau co vai gay"
                             />
@@ -105,13 +120,18 @@ const page = () => {
                                 thần kinh, dẫn đến cơn đau khó chịu, gây cản trở
                                 khả năng vận động.{" "}
                             </p>
-                            <button className="bg-primary text-white font-semibold  px-8 py-2 rounded-md mt-4">
-                                Xem Tiếp
-                            </button>
+                            <div className="mt-4 text-center">
+                                <Link
+                                    href="/"
+                                    className="bg-primary text-white font-semibold  px-8 py-2 rounded-md"
+                                >
+                                    Xem Tiếp
+                                </Link>
+                            </div>
                         </div>
-                        <div>
+                        <div className="border-b-2 pb-8 lg:border-b-0 lg:pb-0">
                             <Image
-                                className=""
+                                className="mx-auto lg:mx-0"
                                 src={image5}
                                 alt="Dau co vai gay"
                             />
@@ -126,13 +146,18 @@ const page = () => {
                                 hoặc căng cơ đùi, đau khuỷu tay Tennis Elbow,
                                 căng cơ, chấn thương vai...
                             </p>
-                            <button className="bg-primary text-white font-semibold  px-8 py-2 rounded-md mt-4">
-                                Xem Tiếp
-                            </button>
+                            <div className="mt-4 text-center">
+                                <Link
+                                    href="/"
+                                    className="bg-primary text-white font-semibold  px-8 py-2 rounded-md"
+                                >
+                                    Xem Tiếp
+                                </Link>
+                            </div>
                         </div>
-                        <div>
+                        <div className="border-b-2 pb-8 lg:border-b-0 lg:pb-0">
                             <Image
-                                className=""
+                                className="mx-auto lg:mx-0"
                                 src={image6}
                                 alt="Dau co vai gay"
                             />
@@ -148,9 +173,14 @@ const page = () => {
                                 trong sinh hoạt và thực hiện các công việc hàng
                                 ngày.
                             </p>
-                            <button className="bg-primary text-white font-semibold  px-8 py-2 rounded-md mt-4">
-                                Xem Tiếp
-                            </button>
+                            <div className="mt-4 text-center">
+                                <Link
+                                    href="/"
+                                    className="bg-primary text-white font-semibold  px-8 py-2 rounded-md"
+                                >
+                                    Xem Tiếp
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>

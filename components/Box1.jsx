@@ -12,7 +12,7 @@ const Box1 = () => {
                         //className="text-4xl font-bold mt-10"
                         className={`text-4xl font-bold mt-10 ${inter.className}`}
                     >
-                        Chăm Sóc Bằng Đôi Tay Hiểu Biết
+                        Chăm Sóc Bạn Bằng Đôi Tay Hiểu Biết
                     </h1>
                     <p className="mt-6 text-lg text-justify ">
                         Bạn xứng đáng được sống một cuộc sống mạnh khỏe, không

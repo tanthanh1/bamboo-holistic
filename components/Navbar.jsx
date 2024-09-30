@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
         <div>
             <nav class="bg-primary border-gray-200 dark:bg-gray-900 text-white  ">
-                <div className=" flex flex-wrap  items-center justify-between max-w-[1080px] mx-auto py-4 ">
+                <div className=" px-4 lg:px-0 flex flex-wrap  items-center justify-between max-w-[1080px] mx-auto py-4 ">
                     <Link
                         href="/"
                         className="flex flex-1 items-center space-x-3 rtl:space-x-reverse"
@@ -87,7 +87,7 @@ const Navbar = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="border-2 p-2 border-white ml-8">
+                    <div className="border-2 p-2 border-white ml-8  font-bold  hidden lg:block">
                         DT: 096 985 6512
                     </div>
                 </div>

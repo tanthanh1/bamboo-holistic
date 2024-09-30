@@ -69,7 +69,6 @@ const AboutPage = () => {
                             hoặc hệ thần kinh trung ương(Cranial Sacral)...
                         </li>
                         <li>
-                            {" "}
                             Applied Kinesiology(AK) là một hệ thống đánh giá 3
                             khía cạnh của Tam giác sức khỏe: Cấu trúc, Chuyển
                             hóa và Tinh thần bằng cách sử dụng test cơ kết hợp
@@ -79,7 +78,7 @@ const AboutPage = () => {
                             trào mạnh mẽ trong lĩnh vực chăm sóc sức khỏe trong
                             thời gian phát triển tương đối ngắn. Đây là trường
                             phái trị liệu tự nhiên đa dạng, phong phú nhất hiện
-                            nay(đồng thời cũng là phương pháp khó tiếp cận bậc
+                            nay (đồng thời cũng là phương pháp khó tiếp cận bậc
                             nhất)
                         </li>
                     </ul>

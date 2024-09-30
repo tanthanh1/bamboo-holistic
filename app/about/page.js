@@ -79,16 +79,31 @@ const AboutPage = () => {
                         Gonstead, Applied Kinesiology... nhằm nâng cao hiệu quả
                         điều trị. Chúng tôi mong muốn mang đến những giá trị
                         thiết thực và toàn diện nhất đối với cơ thể khách hàng
-                        như: Cho phép cơ thể tự phục hồi bằng cách cân bằng dòng
-                        năng lượng Giải tỏa căng thẳng về tinh thần và cảm xúc.
-                        Giảm đau hiệu quả - đau đầu, đau lưng, đau dạ dày, đau
-                        cánh tay, vai, chân và đầu gối. Cải thiện tư thế Tăng
-                        năng lượng, sức sống và chống lại sự mệt mỏi. Cải thiện
-                        nhận thức về tâm trí và cơ thể Cải thiện hiệu suất tại
-                        nơi làm việc, trường học và ở nhà; trong thể thao và
-                        trong các mối quan hệ. Hỗ trợ khách hàng đạt được mục
-                        tiêu cuộc sống và tận hưởng cuộc sống một cách trọn vẹn
-                        nhất.
+                        như:
+                        <ul className="list-disc pl-5">
+                            <li>
+                                Cho phép cơ thể tự phục hồi bằng cách cân bằng
+                                dòng năng lượng
+                            </li>
+                            <li>
+                                Giải tỏa căng thẳng về tinh thần và cảm xúc.
+                                Giảm đau hiệu quả - đau đầu, đau lưng, đau dạ
+                                dày, đau cánh tay, vai, chân và đầu gối.
+                            </li>
+                            <li>
+                                Cải thiện tư thế Tăng năng lượng, sức sống và
+                                chống lại sự mệt mỏi.
+                            </li>
+                            <li>
+                                Cải thiện nhận thức về tâm trí và cơ thể Cải
+                                thiện hiệu suất tại nơi làm việc, trường học và
+                                ở nhà; trong thể thao và trong các mối quan hệ.
+                            </li>
+                            <li>
+                                Hỗ trợ khách hàng đạt được mục tiêu cuộc sống và
+                                tận hưởng cuộc sống một cách trọn vẹn nhất.
+                            </li>
+                        </ul>
                     </p>
                 </div>
             </div>

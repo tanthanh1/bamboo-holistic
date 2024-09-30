@@ -21,6 +21,7 @@ export const POST = async (request) => {
         await newTicket.save();
         return Response.redirect(`${process.env.NEXTAUTH_URL}/thankyou`);
     } catch (error) {
+        
         return new Response("Failed to add property", { status: 500 });
     }
 };

@@ -1,12 +1,17 @@
+import { inter } from "@/assets/styles/fonts";
 import Image from "next/image";
 import image1 from "@/assets/images/1.png";
 import Link from "next/link";
+
 const Box1 = () => {
     return (
         <div className="bg-primary">
             <div className="flex flex-col  lg:text-left lg:flex-row text-white  pt-10 max-w-[1080px]  mx-auto gap-10 lg:gap-28 px-8 lg:px-0">
                 <div className="flex-1">
-                    <h1 className="text-4xl font-bold mt-10 ">
+                    <h1
+                        //className="text-4xl font-bold mt-10"
+                        className={`text-4xl font-bold mt-10 ${inter.className}`}
+                    >
                         Chăm Sóc Bằng Đôi Tay Hiểu Biết
                     </h1>
                     <p className="mt-6 text-lg text-justify ">

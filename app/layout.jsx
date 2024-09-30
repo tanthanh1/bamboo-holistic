@@ -1,4 +1,5 @@
-import { Roboto } from "next/font/google";
+import { inter } from "next/font/google";
+
 import "@/assets/styles/globals.css";
 import Navbar from "@/components/Navbar";
 import Box5 from "@/components/Box5";

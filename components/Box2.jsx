@@ -1,6 +1,7 @@
 import Image from "next/image";
 import image2 from "@/assets/images/2.png";
 import Link from "next/link";
+import { inter } from "@/assets/styles/fonts";
 const Box2 = () => {
     return (
         <div className="bg-white mt-10">
@@ -10,7 +11,9 @@ const Box2 = () => {
                 </div>
                 <div className="flex-1 text-black ">
                     <h2 className="text-2xl ">Giới thiệu</h2>
-                    <h1 className="text-3xl mt-4 font-bold">
+                    <h1
+                        className={`text-3xl mt-4 font-bold ${inter.className}`}
+                    >
                         Tinh hoa của Y Học Tự Nhiên
                     </h1>
                     <p className="mt-6 text-lg text-justify">

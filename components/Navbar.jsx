@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "@/assets/images/logo1.png";
+import { inter } from "@/assets/styles/fonts";
 const Navbar = () => {
     return (
         <div>
@@ -16,7 +17,9 @@ const Navbar = () => {
                             width={40}
                             alt="Picture of the author"
                         />
-                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                        <span
+                            className={`self-center text-2xl font-semibold whitespace-nowrap dark:text-white ${inter.className}`}
+                        >
                             Bamboo Holistic
                         </span>
                     </Link>

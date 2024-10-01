@@ -15,10 +15,12 @@ const AboutPage = () => {
                 </h1>
             </div>
             <div className="bg-secondary mb-4 pb-8">
-                <div className="flex flex-col lg:flex-row lg:gap-5 max-w-[1080px] mx-auto pt-20">
+                <div className="flex flex-col lg:flex-row lg:gap-5 max-w-[1080px] mx-8 lg:mx-auto pt-20">
                     <Image className="flex-1" src={image1} />
                     <div className="flex-1">
-                        <h1 className={`${inter.className} text-2xl font-bold`}>
+                        <h1
+                            className={`${inter.className} text-2xl font-bold mt-4 lg:mt-0`}
+                        >
                             Tinh hoa của Y Học Tự Nhiên
                         </h1>
                         <p className="text-justify mt-2">
@@ -40,7 +42,7 @@ const AboutPage = () => {
                         </p>
                     </div>
                 </div>
-                <div className=" max-w-[1080px] mx-auto pt-20">
+                <div className=" max-w-[1080px] mx-8 lg:mx-auto pt-20 ">
                     <Image src={image2} />
                     <p className="mt-6">
                         Một số trường phái trị liệu Y học tự nhiên đang được sử

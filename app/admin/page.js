@@ -11,7 +11,9 @@ const AdminPage = async () => {
         <div>
             {tickets.map((ticket) => (
                 <div className="mb-4 leading-8 max-w-[1080px]  mx-auto">
-                    <p className="font-bold">Ngày gửi: {ticket.createdAt} </p>
+                    <p className="font-bold">
+                        Ngày gửi: {new Date(ticket.createdAt).toLocaleString()}
+                    </p>
                     <p>Họ và tên: {ticket.name}</p>
                     <p>Số điện thoại: {ticket.phone}</p>
                     <p>Email: {ticket.email}</p>

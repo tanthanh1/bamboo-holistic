@@ -7,10 +7,9 @@ export const GET = async () => {
     return new Response(JSON.stringify(tickets), {
         status: 200,
         header: {
-            "Content-Type": "application/json",
-            "Cache-Control": "no-store, no-cache, must-revalidate", // Ensures no caching
-            Pragma: "no-cache", // HTTP/1.0 compatibility
-            Expires: "0",
+            "Cache-Control": "public, s-maxage=1",
+            "CDN-Cache-Control": "public, s-maxage=60",
+            "Vercel-CDN-Cache-Control": "public, s-maxage=3600",
         },
     });
 };

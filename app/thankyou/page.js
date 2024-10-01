@@ -1,4 +1,8 @@
 const ThankYouPage = () => {
-    return <div>Thank You. We Will Contact You Soon</div>;
+    return (
+        <div>
+            Cám ơn bạn đã liên hệ. Chúng tôi sẽ gọi lại trong thời gian sớm nhất
+        </div>
+    );
 };
 export default ThankYouPage;

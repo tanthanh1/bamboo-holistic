@@ -1,5 +1,3 @@
-"use client";
-import { useState, useEffect } from "react";
 import { fetchTickets } from "@/utils/requests";
 
 const AdminPage = async () => {

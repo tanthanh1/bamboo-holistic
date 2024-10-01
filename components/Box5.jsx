@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import image3 from "@/assets/images/3.png";
 import image4 from "@/assets/images/4.png";
 
@@ -32,9 +33,12 @@ const Box5 = () => {
                     </div>
                 </div>
                 <div className="mx-auto content-center">
-                    <button className="bg-white text-primary font-bold  px-4 py-2 rounded-sm ">
+                    <Link
+                        className="bg-white text-primary font-bold  px-4 py-2 rounded-sm "
+                        href="/contact"
+                    >
                         Đặt lịch khám
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>

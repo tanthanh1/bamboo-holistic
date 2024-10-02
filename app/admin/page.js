@@ -1,4 +1,3 @@
-"use client";
 import { fetchTickets } from "@/utils/requests";
 
 const AdminPage = async () => {

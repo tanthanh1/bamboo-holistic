@@ -15,7 +15,7 @@ const NewsForm = () => {
             title: "",
             shortDescription: "",
             tagList: [],
-            fullDescription: "Thanh",
+            fullDescription: "",
         },
     });
 

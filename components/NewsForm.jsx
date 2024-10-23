@@ -1,5 +1,5 @@
 "use client";
-import { useForm } from "react-hook-form";
+import { useForm, useController } from "react-hook-form";
 
 import { Button } from "@mui/material";
 import { Box } from "@mui/system";
@@ -10,7 +10,7 @@ import { useRouter } from "next/router";
 // import TextEditor from "@/components/form/TextEditor.tsx";
 
 const NewsForm = () => {
-    const { control, handleSubmit } = useForm({
+    const { register, control, handleSubmit } = useForm({
         defaultValues: {
             title: "",
             shortDescription: "",
@@ -20,23 +20,42 @@ const NewsForm = () => {
     });
 
     const handleLoginSubmit = async (formValues) => {
-        console.log(formValues);
-        const payload = new FormData();
-        payload.set("title", formValues.title);
-        payload.set("content", formValues.fullDescription);
-        payload.forEach((value, key) => {
-            console.log(key, value);
-        });
-        const response = await fetch("/api/news", {
-            method: "POST",
+        if (formValues.kind === "Tin tức") {
+            const payload = new FormData();
+            payload.set("title", formValues.title);
+            payload.set("content", formValues.fullDescription);
+            payload.forEach((value, key) => {
+                console.log(key, value);
+            });
+            const response = await fetch("/api/news", {
+                method: "POST",
 
-            body: payload,
-        });
+                body: payload,
+            });
+        } else {
+            const payload = new FormData();
+            payload.set("title", formValues.title);
+            payload.set("content", formValues.fullDescription);
+            payload.forEach((value, key) => {
+                console.log(key, value);
+            });
+            const response = await fetch("/api/services", {
+                method: "POST",
+
+                body: payload,
+            });
+        }
     };
 
     return (
         <Box component="form" onSubmit={handleSubmit(handleLoginSubmit)}>
-            <label htmlFor="">Tiêu Đề: </label>
+            <select id="" control={control} {...register("kind")}>
+                <option value="Tin tức">Tin tức</option>
+                <option value="Dịch vụ">Dịch vụ</option>
+            </select>
+            <label className="block" htmlFor="">
+                Tiêu Đề:{" "}
+            </label>
             <InputField
                 name="title"
                 label="Title"

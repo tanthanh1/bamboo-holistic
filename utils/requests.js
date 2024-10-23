@@ -26,4 +26,19 @@ async function fetchNews() {
     }
 }
 
-export { fetchTickets, fetchNews };
+async function fetchNewById(id) {
+    try {
+        const res = await fetch(`${apiDomain}/news/${id}`, {
+            cache: "no-store",
+        });
+        if (!res.ok) {
+            throw new Error("Failed to fetch data");
+        }
+        return res.json();
+    } catch (error) {
+        console.log(error);
+        return [];
+    }
+}
+
+export { fetchTickets, fetchNews, fetchNewById };

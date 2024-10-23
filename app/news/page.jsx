@@ -13,7 +13,7 @@ const NewsPage = async () => {
                     <div
                         dangerouslySetInnerHTML={{ __html: ticket.content }}
                     ></div>
-                    t
+                    
                 </div>
             ))}
         </div>

@@ -16,7 +16,7 @@ const Box4 = () => {
                         alt="Picture of the author"
                     />
                     <p className="text-center mt-4 ">
-                        Giải quyết chính xác nguyên nhân gây bệnh
+                        Kỹ thuật an toàn, tiết kiệm thời gian
                     </p>
                 </div>
                 <div>
@@ -36,7 +36,7 @@ const Box4 = () => {
                         alt="Picture of the author"
                     />
                     <p className="text-center mt-4">
-                        Kĩ thuật an toàn, tiết kiệm thời gian
+                        Giải quyết chính xác nguyên nhân gây bệnh
                     </p>
                 </div>
                 <div>

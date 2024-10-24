@@ -21,7 +21,7 @@ const Box3 = () => {
                             src={image3}
                             alt="Picture of the author"
                         />
-                        <p className="text-center mt-4">Đau cổ vai gáy </p>
+                        <p className="text-center mt-4">Đau thần kinh toạ </p>
                     </div>
                     <div className="flex-1 bg-white p-10">
                         <Image
@@ -29,9 +29,7 @@ const Box3 = () => {
                             src={image4}
                             alt="Picture of the author"
                         />
-                        <p className="text-center mt-4">
-                            Chấn thương thể thao{" "}
-                        </p>
+                        <p className="text-center mt-4">Đau cổ vai gáy</p>
                     </div>
                     <div className="flex-1 bg-white p-10">
                         <Image
@@ -39,7 +37,9 @@ const Box3 = () => {
                             src={image5}
                             alt="Picture of the author"
                         />
-                        <p className="text-center mt-4">Đau thần kinh toạ </p>
+                        <p className="text-center mt-4">
+                            Chấn thương thể thao{" "}
+                        </p>
                     </div>
                 </div>
                 <div className="mt-6 text-center">

@@ -10,7 +10,7 @@ const Box2 = () => {
                     <Image src={image2} alt="Picture of the author" />
                 </div>
                 <div className="flex-1 text-black ">
-                    <h2 className="text-2xl ">Giới thiệu</h2>
+                    <h2 className="text-2xl text-primary">Giới thiệu</h2>
                     <h1
                         className={`text-3xl mt-4 font-bold ${inter.className}`}
                     >

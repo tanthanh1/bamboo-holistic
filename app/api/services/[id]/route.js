@@ -1,16 +1,17 @@
 import connectDB from "@/config/database";
 import Service from "@/models/Service";
 
-export const OPTIONS= (request)=>{
-    return new Response(JSON.stringify({status:'OK'}),{
-        status: 200,
-        headers: {
-            "Access-Control-Allow-Origin": "https://www.bambooholistic.vn",
-            'Vary':'Origin',
-            'Access-Control-Allow-Headers':'Content-Type'
-        },
-    }
-}
+// co the can neu post
+// export const OPTIONS= (request)=>{
+//     return new Response(JSON.stringify({status:'OK'}),{
+//         status: 200,
+//         headers: {
+//             "Access-Control-Allow-Origin": "https://www.bambooholistic.vn",
+//             'Vary':'Origin',
+//             'Access-Control-Allow-Headers':'Content-Type'
+//         },
+//     }
+// }
 export const GET = async (request, { params }) => {
     try {
         await connectDB();
@@ -20,11 +21,11 @@ export const GET = async (request, { params }) => {
             return new Response("Service not found", { status: 404 });
         return new Response(JSON.stringify(property), {
             status: 200,
-            headers: {
-                "Access-Control-Allow-Origin": "https://www.bambooholistic.vn",
-                'Vary':'Origin',
-                'Access-Control-Allow-Headers':'Content-Type'
-            },
+            // headers: {
+            //     //"Access-Control-Allow-Origin": "https://bambooholistic.vn",
+            //     // 'Vary':'Origin',
+            //     // 'Access-Control-Allow-Headers':'Content-Type',
+            // },
         });
     } catch (error) {
         console.log(error);

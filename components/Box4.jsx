@@ -15,7 +15,7 @@ const Box4 = () => {
                         src={image7}
                         alt="Picture of the author"
                     />
-                    <p className="text-center text-primary ">
+                    <p className="text-center mt-4 ">
                         Giải quyết chính xác nguyên nhân gây bệnh
                     </p>
                 </div>

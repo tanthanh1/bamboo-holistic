@@ -16,7 +16,9 @@ export const POST = async (request) => {
         return Response.redirect(`${process.env.NEXTAUTH_URL}/thankyou`);
     } catch (error) {
         console.log(error);
-        return new Response("Failed to add property", { status: 500 });
+        return new Response("Failed to add property", {
+            status: 500,
+        });
     }
 };
 

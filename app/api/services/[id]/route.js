@@ -10,6 +10,9 @@ export const GET = async (request, { params }) => {
             return new Response("Service not found", { status: 404 });
         return new Response(JSON.stringify(property), {
             status: 200,
+            headers: {
+                // "Access-Control-Allow-Origin": "https://www.google.com",
+            },
         });
     } catch (error) {
         console.log(error);

@@ -45,6 +45,7 @@ async function fetchServiceById(id) {
     try {
         const res = await fetch(`${apiDomain}/services/${id}`, {
             cache: "no-store",
+            mode: "no-cors",
         });
         if (!res.ok) {
             throw new Error("Failed to fetch data");

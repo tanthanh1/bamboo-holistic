@@ -23,14 +23,6 @@ const nextConfig = {
             },
         ];
     },
-    async rewrites() {
-        return [
-            {
-                source: "/api/:path*",
-                destination: "https://wwww.bambooholistic.vn/api/:path*",
-            },
-        ];
-    },
 };
 
 export default nextConfig;

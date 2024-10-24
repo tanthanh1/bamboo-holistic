@@ -53,7 +53,7 @@ const page = () => {
 
                                     <div className="mt-4 text-center">
                                         <Link
-                                            href="/"
+                                            href="/service/6719b8f349202842cc8e57ca"
                                             className="bg-primary text-white font-semibold  px-8 py-2 rounded-md"
                                         >
                                             Xem Tiếp
@@ -92,7 +92,7 @@ const page = () => {
 
                                     <div className="mt-4 text-center">
                                         <Link
-                                            href="/"
+                                            href="/service/6719b78e5993be44a6bcb09e"
                                             className="bg-primary text-white font-semibold  px-8 py-2 rounded-md"
                                         >
                                             Xem Tiếp
@@ -127,7 +127,7 @@ const page = () => {
 
                                     <div className="mt-4 text-center">
                                         <Link
-                                            href="/"
+                                            href="/service/6719b6425993be44a6bcb09c"
                                             className="bg-primary text-white font-semibold  px-8 py-2 rounded-md"
                                         >
                                             Xem Tiếp
@@ -162,7 +162,7 @@ const page = () => {
 
                                     <div className="mt-4 text-center">
                                         <Link
-                                            href="/"
+                                            href="/service/6719ba94a5cdcc74fdc55f26"
                                             className="bg-primary text-white font-semibold  px-8 py-2 rounded-md"
                                         >
                                             Xem Tiếp
@@ -199,7 +199,7 @@ const page = () => {
 
                                     <div className="mt-4 text-center">
                                         <Link
-                                            href="/"
+                                            href="/service/6719bc89f1c0bee836ad322d"
                                             className="bg-primary text-white font-semibold  px-8 py-2 rounded-md"
                                         >
                                             Xem Tiếp

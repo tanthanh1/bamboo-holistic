@@ -237,7 +237,7 @@ const page = () => {
 
                                     <div className="mt-4 text-center">
                                         <Link
-                                            href="/"
+                                            href="/service/6719be9fc5353d1b404c45f2"
                                             className="bg-primary text-white font-semibold  px-8 py-2 rounded-md"
                                         >
                                             Xem Tiếp

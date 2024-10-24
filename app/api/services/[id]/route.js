@@ -1,6 +1,16 @@
 import connectDB from "@/config/database";
 import Service from "@/models/Service";
 
+export const OPTIONS= (request)=>{
+    return new Response(JSON.stringify({status:'OK'}),{
+        status: 200,
+        headers: {
+            "Access-Control-Allow-Origin": "https://www.bambooholistic.vn",
+            'Vary':'Origin',
+            'Access-Control-Allow-Headers':'Content-Type'
+        },
+    }
+}
 export const GET = async (request, { params }) => {
     try {
         await connectDB();
@@ -11,7 +21,9 @@ export const GET = async (request, { params }) => {
         return new Response(JSON.stringify(property), {
             status: 200,
             headers: {
-                // "Access-Control-Allow-Origin": "https://www.google.com",
+                "Access-Control-Allow-Origin": "https://www.bambooholistic.vn",
+                'Vary':'Origin',
+                'Access-Control-Allow-Headers':'Content-Type'
             },
         });
     } catch (error) {

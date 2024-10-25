@@ -138,7 +138,7 @@ const Navbar = () => {
                 )}
 
                 <div className="border-2 p-2 border-white ml-8  font-bold  hidden lg:block">
-                    ĐT: 096 985 6512
+                    <a href="tel:0969856512">ĐT: 096 985 6512</a>
                 </div>
             </nav>
             {/* </nav> */}

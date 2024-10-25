@@ -16,7 +16,9 @@ const Box5 = () => {
                         />
                         <div className="content-center  text-center">
                             <p className="content-center">Điện thoại</p>
-                            <p className="content-center">096 985 6512</p>
+                            <a href="tel:0969856512" className="content-center">
+                                096 985 6512
+                            </a>
                         </div>
                     </div>
                 </div>

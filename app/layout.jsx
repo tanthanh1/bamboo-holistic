@@ -2,7 +2,7 @@ import { inter } from "next/font/google";
 
 import "@/assets/styles/globals.css";
 import Navbar from "@/components/Navbar";
-import Box5 from "@/components/Box5";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 export const metadata = {
@@ -18,7 +18,7 @@ const MainLayout = ({ children }) => {
                 <Navbar />
 
                 <main className="max-w-[1080px] mx-auto">{children}</main>
-                <Box5 />
+                <Contact />
                 <Footer />
             </body>
         </html>

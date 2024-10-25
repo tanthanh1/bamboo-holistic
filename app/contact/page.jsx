@@ -81,7 +81,12 @@ const ContactPage = () => {
 
                     <div className="flex gap-2">
                         <Image className="" src={tel} alt="tel" width={50} />
-                        <p className="content-center text-base">096 985 6512</p>
+                        <a
+                            href="tel:0969856512"
+                            className="content-center text-base"
+                        >
+                            096 985 6512
+                        </a>
                     </div>
                     <div className="flex gap-2">
                         <Image className="" src={email} alt="tel" width={50} />

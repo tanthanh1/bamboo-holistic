@@ -8,7 +8,7 @@ const page = async () => {
     const property = await fetchServiceById(slug);
 
     return (
-        <div className="max-w-[1080px] lg:mx-auto mb-4 mx-2 ">
+        <div className="max-w-[1080px] lg:mx-auto mb-4 mx-3 ">
             <h1 className="text-center text-xl font-bold my-4">
                 {property.title}
             </h1>

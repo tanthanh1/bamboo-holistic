@@ -17,7 +17,9 @@ const MainLayout = ({ children }) => {
             <body>
                 <Navbar />
 
-                <main className="max-w-[1080px] mx-auto">{children}</main>
+                <main className="lg:max-w-[1080px] lg:mx-auto px-3 lg:px-0">
+                    {children}
+                </main>
                 <Contact />
                 <Footer />
             </body>

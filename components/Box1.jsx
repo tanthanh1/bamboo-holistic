@@ -6,7 +6,7 @@ import Link from "next/link";
 const Box1 = () => {
     return (
         <div className="bg-primary">
-            <div className="flex flex-col  lg:text-left lg:flex-row text-white  pt-10 max-w-[1080px]  mx-auto gap-10 lg:gap-28 px-8 lg:px-0 relative before:content-[''] before:bg-primary  before:absolute before:h-full before:w-[200vw] before:left-[-100vw] before:z-[-1] before:top-0">
+            <div className="flex flex-col  lg:text-left lg:flex-row text-white  pt-10 max-w-[1080px]  mx-auto gap-10 lg:gap-28  relative before:content-[''] before:bg-primary  before:absolute before:h-full before:w-[200vw] before:left-[-100vw] before:z-[-1] before:top-0">
                 <div className="flex-1">
                     <h1
                         //className="text-4xl font-bold mt-10"

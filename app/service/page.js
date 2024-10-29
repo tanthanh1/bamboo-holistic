@@ -15,7 +15,7 @@ const page = () => {
                 </h1>
             </div>
             <div className="bg-secondary relative before:content-[''] before:bg-secondary  before:absolute before:h-full before:w-[200vw] before:left-[-100vw] before:z-[-1] ">
-                <div className="max-w-[1080px]  mx-auto p-8">
+                <div className="max-w-[1080px]  mx-auto py-8 ">
                     <h2 className="text-xl font-bold text-center">
                         Điều trị tận gốc các vấn đề xương khớp
                     </h2>

@@ -8,7 +8,7 @@ import map from "@/assets/images/map.jpg";
 
 const ContactPage = () => {
     return (
-        <div className="bg-secondary py-10">
+        <div className="bg-secondary py-10 relative before:content-[''] before:bg-secondary  before:absolute before:h-full before:w-[200vw] before:left-[-100vw] before:z-[-1] before:top-0">
             <div className="bg-white flex flex-col lg:flex-row max-w-[1080px] mx-auto gap-16 p-6 ">
                 <div className="flex-1 ">
                     <form

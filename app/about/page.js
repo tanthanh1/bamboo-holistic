@@ -7,14 +7,14 @@ import image3 from "@/assets/images/gioithieu3.png";
 const AboutPage = () => {
     return (
         <div>
-            <div className="bg-primary text-white  mx-auto pt-8 pb-10">
+            <div className="bg-primary text-white  mx-auto pt-8 pb-10 relative before:content-[''] before:bg-primary  before:absolute before:h-full before:w-[200vw] before:left-[-100vw] before:z-[-1] before:top-0">
                 <h1
                     className={`text-center text-2xl font-bold ${inter.className}`}
                 >
                     Giới thiệu
                 </h1>
             </div>
-            <div className="bg-secondary mb-4 pb-8">
+            <div className="bg-secondary mb-4 pb-8 relative before:content-[''] before:bg-secondary  before:absolute before:h-full before:w-[200vw] before:left-[-100vw] before:z-[-1]">
                 <div className="flex flex-col lg:flex-row lg:gap-5 max-w-[1080px] mx-8 lg:mx-auto pt-20">
                     <Image className="flex-1" src={image1} />
                     <div className="flex-1">

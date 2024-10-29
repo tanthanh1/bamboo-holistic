@@ -3,6 +3,7 @@ import { useParams } from "next/navigation";
 
 import { useState, useEffect } from "react";
 import { fetchServiceById } from "@/utils/requests";
+import Spinner from "@/components/Spinner";
 
 const page = () => {
     const { slug } = useParams();

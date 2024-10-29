@@ -31,6 +31,7 @@ const page = () => {
 
     return (
         <>
+            {loading && <Spinner loading={loading} />}
             {!loading && property && (
                 <div className="max-w-[1080px] lg:mx-auto mb-4 mx-3 ">
                     <h1 className="text-center text-xl font-bold my-4">

@@ -6,7 +6,7 @@ import Link from "next/link";
 import { inter } from "@/assets/styles/fonts";
 const Box3 = () => {
     return (
-        <div className=" bg-secondary text-black py-10 max-w-[1080px]  mx-auto gap-10 px-8 lg:px-20 relative before:content-[''] before:bg-secondary  before:absolute before:h-full before:w-[200vw] before:left-[-100vw] before:z-[-1] before:top-0">
+        <div className=" bg-secondary text-black py-10 max-w-[1080px]  mx-auto gap-10  lg:px-20 relative before:content-[''] before:bg-secondary  before:absolute before:h-full before:w-[200vw] before:left-[-100vw] before:z-[-1] before:top-0">
             <p className="text-center text-primary ">Danh mục trị liệu</p>
             <h2
                 className={`text-xl font-bold text-center mt-2 ${inter.className}`}

@@ -15,7 +15,7 @@ const AboutPage = () => {
                 </h1>
             </div>
             <div className="bg-secondary mb-4 pb-8 relative before:content-[''] before:bg-secondary  before:absolute before:h-full before:w-[200vw] before:left-[-100vw] before:z-[-1]">
-                <div className="flex flex-col lg:flex-row lg:gap-5 max-w-[1080px] mx-8 lg:mx-auto pt-20">
+                <div className="flex flex-col lg:flex-row lg:gap-5 max-w-[1080px]  lg:mx-auto pt-20">
                     <Image className="flex-1" src={image1} />
                     <div className="flex-1">
                         <h1
@@ -42,7 +42,7 @@ const AboutPage = () => {
                         </p>
                     </div>
                 </div>
-                <div className=" max-w-[1080px] mx-8 lg:mx-auto pt-20 ">
+                <div className=" max-w-[1080px] lg:mx-auto pt-20 ">
                     <Image src={image2} />
                     <p className="mt-6">
                         Một số trường phái trị liệu Y học tự nhiên đang được sử

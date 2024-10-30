@@ -1,11 +1,6 @@
 import { fetchNews } from "@/utils/requests";
 import Image from "next/image";
-import image1 from "@/assets/images/daucovaigay.jpg";
-import image2 from "@/assets/images/thoaihoacotsong.jpg";
-import image3 from "@/assets/images/dauthankinhtoa.jpg";
-import image4 from "@/assets/images/thoatvidiadem.jpg";
-import image5 from "@/assets/images/chanthuongthethao.jpg";
-import image6 from "@/assets/images/viemdaucackhop.jpg";
+
 import Link from "next/link";
 const NewsPage = async () => {
     // const [tickets,setTickets]=useState([]])
@@ -13,17 +8,6 @@ const NewsPage = async () => {
     const news = await fetchNews();
     console.log(news);
     return (
-        // <div className="mt-4">
-        //     {news.map((ticket) => (
-        //         <div className="mb-4 leading-8 max-w-[1080px]  mx-auto">
-        //             <h1> {ticket.title}</h1>
-        //             <div
-        //                 dangerouslySetInnerHTML={{ __html: ticket.content }}
-        //             ></div>
-
-        //         </div>
-        //     ))}
-        // </div>
         <div>
             <div className="bg-primary text-white  mx-auto pt-8 pb-10 relative before:content-[''] before:bg-primary  before:absolute before:h-full before:w-[200vw] before:left-[-100vw] before:z-[-1] before:top-0">
                 <h1 className="text-center text-2xl font-bold">Tin Tức</h1>

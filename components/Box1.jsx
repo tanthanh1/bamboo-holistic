@@ -16,7 +16,7 @@ const Box1 = () => {
                 <p className="mt-6 text-lg text-justify ">
                     Bạn xứng đáng được sống một cuộc sống mạnh khỏe, không đau
                     đớn và chúng tôi ở đây để giúp bạn biến điều đó thành hiện
-                    thực! Applied Kinesiology(AK) là một phương pháp an toàn,
+                    thực! Applied Kinesiology (AK) là một phương pháp an toàn,
                     không xâm lấn và thuận tự nhiên để giúp bạn đạt được sức
                     khỏe tối ưu cho cá nhân mình.
                 </p>

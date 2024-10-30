@@ -37,7 +37,7 @@ async function fetchNewById(id) {
         return res.json();
     } catch (error) {
         console.log(error);
-        return [];
+        return null;
     }
 }
 

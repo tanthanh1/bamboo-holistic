@@ -6,9 +6,15 @@ const NewSchema = new Schema(
             type: String,
             required: true,
         },
+        image_url: {
+            type: String,
+        },
         content: {
             type: String,
             required: true,
+        },
+        short_desc: {
+            type: String,
         },
     },
     {

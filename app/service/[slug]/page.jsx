@@ -26,6 +26,8 @@ const page = () => {
         if (property === null) fetchProperty();
     }, [slug, property]);
 
+    console.log("service: ", property);
+
     if (!property && !loading) {
         return <h1>Not Found</h1>;
     }

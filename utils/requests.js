@@ -43,16 +43,14 @@ async function fetchNewById(id) {
 
 async function fetchServiceById(id) {
     try {
-        const res = await fetch(`${apiDomain}/services/${id}`, {
-            cache: "no-store",
-        });
+        const res = await fetch(`${apiDomain}/services/${id}`);
         if (!res.ok) {
             throw new Error("Failed to fetch data");
         }
         return res.json();
     } catch (error) {
         console.log(error);
-        return [];
+        return null;
     }
 }
 

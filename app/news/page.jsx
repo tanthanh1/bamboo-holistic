@@ -1,3 +1,4 @@
+
 import { fetchNews } from "@/utils/requests";
 import Image from "next/image";
 

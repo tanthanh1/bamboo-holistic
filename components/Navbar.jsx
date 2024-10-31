@@ -4,9 +4,28 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "@/assets/images/logo1.png";
 import { inter } from "@/assets/styles/fonts";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    const ref = useRef(null);
+
+    useEffect(() => {
+        if (!isMobileMenuOpen) return;
+        const handleOutSideClick = (event) => {
+            if (!ref.current?.contains(event.target)) {
+                alert("Outside Clicked.");
+                console.log("Outside Clicked. ");
+            }
+        };
+
+        window.addEventListener("mousedown", handleOutSideClick);
+
+        return () => {
+            window.removeEventListener("mousedown", handleOutSideClick);
+        };
+    }, [ref, isMobileMenuOpen]);
+
     return (
         <div>
             {/* <nav class="bg-primary border-gray-200 dark:bg-gray-900 text-white  "> */}
@@ -99,6 +118,7 @@ const Navbar = () => {
                     <div
                         className="w-full md:block md:w-auto "
                         id="navbar-default"
+                        ref={ref}
                     >
                         <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                             <li>

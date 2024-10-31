@@ -13,11 +13,11 @@ export const metadata = {
 };
 const MainLayout = ({ children }) => {
     return (
-        <html>
-            <body>
+        <html className="overflow-x-hidden">
+            <body className="overflow-x-hidden relative">
                 <Navbar />
 
-                <main className="lg:max-w-[1080px] lg:mx-auto px-4 lg:px-0">
+                <main className="lg:max-w-[1080px] lg:mx-auto  px-4 lg:px-0">
                     {children}
                 </main>
                 <Contact />

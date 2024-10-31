@@ -33,7 +33,7 @@ const Navbar = () => {
     return (
         <div>
             {/* <nav class="bg-primary border-gray-200 dark:bg-gray-900 text-white  "> */}
-            <nav className=" text-white  bg-primary px-4 lg:px-0 flex flex-wrap  items-center justify-between max-w-[1080px] mx-auto py-4 relative before:content-[''] before:bg-primary  before:absolute before:h-full before:w-[200vw] before:left-[-100vw] before:z-[-1]">
+            <nav className=" text-white  bg-primary  px-4 lg:px-0 flex flex-wrap  items-center justify-between max-w-[1080px] mx-auto py-4 relative before:content-[''] before:bg-primary  before:absolute before:h-full before:w-[200vw] before:left-[-100vw] before:z-[-1]">
                 <Link
                     href="/"
                     className="flex flex-1 items-center space-x-3 rtl:space-x-reverse"
@@ -123,42 +123,51 @@ const Navbar = () => {
                     <div
                         className="w-full md:block md:w-auto "
                         id="navbar-default"
+                        onClick={() => setIsMobileMenuOpen(false)}
                         ref={ref_menu}
                     >
                         <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                             <li>
-                                <a
+                                <Link
                                     href="/"
                                     className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent  md:p-0 dark:text-white "
                                     aria-current="page"
                                 >
                                     Trang chủ
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="/service"
                                     class="block py-2 px-3  rounded  md:hover:bg-transparent md:border-0  md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                                 >
                                     Dịch vụ
-                                </a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    href="/news"
+                                    class="block py-2 px-3  rounded  md:hover:bg-transparent md:border-0  md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                >
+                                    Tin tức
+                                </Link>
                             </li>
 
                             <li>
-                                <a
+                                <Link
                                     href="/about"
                                     class="block py-2 px-3  rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                                 >
                                     Giới thiệu
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="/contact"
                                     className="block py-2 px-3  rounded  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                                 >
                                     Liên hệ
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>

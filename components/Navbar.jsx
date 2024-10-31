@@ -8,13 +8,17 @@ import { useState, useEffect, useRef } from "react";
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-    const ref = useRef(null);
+    const ref_menu = useRef(null);
+    const ref_hamburger = useRef(null);
 
     useEffect(() => {
         if (!isMobileMenuOpen) return;
         const handleOutSideClick = (event) => {
-            if (!ref.current?.contains(event.target)) {
-                alert("Outside Clicked.");
+            if (
+                !ref_menu.current?.contains(event.target) &&
+                !ref_hamburger.current?.contains(event.target)
+            ) {
+                setIsMobileMenuOpen(false);
                 console.log("Outside Clicked. ");
             }
         };
@@ -24,7 +28,7 @@ const Navbar = () => {
         return () => {
             window.removeEventListener("mousedown", handleOutSideClick);
         };
-    }, [ref, isMobileMenuOpen]);
+    }, [ref_menu, isMobileMenuOpen]);
 
     return (
         <div>
@@ -52,6 +56,7 @@ const Navbar = () => {
                     className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                     aria-controls="navbar-default"
                     aria-expanded={isMobileMenuOpen}
+                    ref={ref_hamburger}
                     onClick={() => setIsMobileMenuOpen((prev) => !prev)}
                 >
                     <span className="sr-only">Open main menu</span>
@@ -118,7 +123,7 @@ const Navbar = () => {
                     <div
                         className="w-full md:block md:w-auto "
                         id="navbar-default"
-                        ref={ref}
+                        ref={ref_menu}
                     >
                         <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                             <li>

@@ -7,6 +7,8 @@ import { EditorField } from "@/components/form/EditorField.tsx";
 import InputField from "@/components/form/InputField";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+
+import { getImageSrc, addListStyle } from "@/utils/other.js";
 // import TextEditor from "@/components/form/TextEditor.tsx";
 
 const NewsForm = () => {
@@ -23,7 +25,9 @@ const NewsForm = () => {
         if (formValues.kind === "Tin tức") {
             const payload = new FormData();
             payload.set("title", formValues.title);
-            payload.set("content", formValues.fullDescription);
+            payload.set("content", addListStyle(formValues.fullDescription));
+            payload.set("short_desc", formValues.short_desc);
+            payload.set("image_url", getImageSrc(formValues.fullDescription));
             payload.forEach((value, key) => {
                 console.log(key, value);
             });
@@ -35,7 +39,8 @@ const NewsForm = () => {
         } else {
             const payload = new FormData();
             payload.set("title", formValues.title);
-            payload.set("content", formValues.fullDescription);
+            payload.set("content", addListStyle(formValues.fullDescription));
+            payload.set("short_desc", formValues.short_desc);
             payload.forEach((value, key) => {
                 console.log(key, value);
             });
@@ -60,6 +65,16 @@ const NewsForm = () => {
                 name="title"
                 label="Title"
                 placeholder="Tiêu đề"
+                control={control}
+            />
+            <label className="block" htmlFor="">
+                Mô tả ngắn:{" "}
+            </label>
+
+            <InputField
+                name="short_desc"
+                label="short_desc"
+                placeholder="Mô tả"
                 control={control}
             />
 

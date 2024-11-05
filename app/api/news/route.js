@@ -10,7 +10,8 @@ export const POST = async (request) => {
         const newData = {
             title: formData.get("title"),
             content: formData.get("content"),
-            image_url: "http",
+            image_url: formData.get("image_url"),
+            short_desc: formData.get("short_desc"),
         };
         const newNew = new New(newData);
         await newNew.save();

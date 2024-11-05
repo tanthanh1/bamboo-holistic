@@ -3,9 +3,8 @@ import { Box, FormHelperText, Typography } from "@mui/material";
 import dynamic from "next/dynamic";
 import { LegacyRef, useCallback, useEffect, useRef } from "react";
 import { Control, FieldValues, Path, useController } from "react-hook-form";
-import ReactQuill, { ReactQuillProps, Quill } from "react-quill";
+import ReactQuill, { ReactQuillProps } from "react-quill";
 import "react-quill/dist/quill.snow.css";
-import { addListStyle } from "@/utils/other.js";
 
 interface ReactQuillWrapperProps extends ReactQuillProps {
     forwardedRef: LegacyRef<ReactQuill>;
@@ -112,7 +111,6 @@ export function EditorField<T extends FieldValues>({
                 ["bold", "italic", "underline", "strike", "blockquote"],
                 [
                     { list: "ordered" },
-
                     { list: "bullet" },
                     { indent: "-1" },
                     { indent: "+1" },
@@ -134,7 +132,6 @@ export function EditorField<T extends FieldValues>({
         "strike",
         "blockquote",
         "list",
-        "custom-list",
         "bullet",
         "indent",
         "link",
@@ -156,8 +153,8 @@ export function EditorField<T extends FieldValues>({
                     formats={formats}
                     value={value}
                     onChange={(content) => {
-                        console.log(addListStyle(content));
-                        onChange(addListStyle(content));
+                        console.log(content);
+                        onChange(content);
                     }}
                 />
             </Box>

@@ -21,6 +21,7 @@ const page = () => {
             } finally {
                 setLoading(false);
             }
+            
         };
         if (property === null) fetchProperty();
     }, [slug, property]);

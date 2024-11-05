@@ -16,7 +16,6 @@ const Box3 = () => {
             <div className="flex flex-col lg:flex-row gap-10 mt-8 ">
                 <div className="flex-1 bg-white p-10">
                     <Link href="/service/6719b6425993be44a6bcb09c">
-                        {" "}
                         <Image
                             className="block mx-auto"
                             src={image3}

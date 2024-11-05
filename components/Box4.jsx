@@ -33,7 +33,7 @@ const Box4 = () => {
                     <Image
                         className="block mx-auto"
                         src={image6}
-                        alt="Picture of the author"
+                        alt="Giải quyết chính xác nguyên nhân gây bệnh"
                     />
                     <p className="text-center mt-4">
                         Giải quyết chính xác nguyên nhân gây bệnh
@@ -43,7 +43,7 @@ const Box4 = () => {
                     <Image
                         className="block mx-auto"
                         src={image9}
-                        alt="Picture of the author"
+                        alt="Không dùng thuốc"
                     />
                     <p className="text-center mt-4">Không dùng thuốc</p>
                 </div>

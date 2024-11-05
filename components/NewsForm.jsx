@@ -55,7 +55,7 @@ const NewsForm = () => {
 
     return (
         <Box component="form" onSubmit={handleSubmit(handleLoginSubmit)}>
-            <label className="block" htmlFor="">
+            <label className="block mb-2" htmlFor="">
                 Danh mục:
             </label>
             <select
@@ -77,7 +77,7 @@ const NewsForm = () => {
                 control={control}
             />
             <label className="block" htmlFor="">
-                Mô tả ngắn:{" "}
+                Mô tả ngắn:
             </label>
 
             <InputField

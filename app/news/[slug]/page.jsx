@@ -3,6 +3,7 @@ import { useParams } from "next/navigation";
 import { fetchNewById } from "@/utils/requests";
 import { useState, useEffect } from "react";
 import Spinner from "@/components/Spinner";
+import Link from "next/link";
 
 const page = () => {
     const { slug } = useParams();
@@ -21,7 +22,6 @@ const page = () => {
             } finally {
                 setLoading(false);
             }
-            
         };
         if (property === null) fetchProperty();
     }, [slug, property]);
@@ -41,6 +41,14 @@ const page = () => {
                     />
                 </div>
             )}
+            <div className="mt-4 mb-8">
+                <Link
+                    href="/news"
+                    className="bg-primary text-white  text-base px-4 py-2  rounded-md"
+                >
+                    Quay lại &larr;
+                </Link>
+            </div>
         </>
     );
 };

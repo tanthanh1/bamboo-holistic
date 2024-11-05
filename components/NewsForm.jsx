@@ -41,6 +41,7 @@ const NewsForm = () => {
             payload.set("title", formValues.title);
             payload.set("content", addListStyle(formValues.fullDescription));
             payload.set("short_desc", formValues.short_desc);
+            payload.set("image_url", getImageSrc(formValues.fullDescription));
             payload.forEach((value, key) => {
                 console.log(key, value);
             });
@@ -54,7 +55,15 @@ const NewsForm = () => {
 
     return (
         <Box component="form" onSubmit={handleSubmit(handleLoginSubmit)}>
-            <select id="" control={control} {...register("kind")}>
+            <label className="block" htmlFor="">
+                Danh mục:
+            </label>
+            <select
+                className="bg-secondary mb-2 text-primary border p-1 rounded-md border-primary"
+                id=""
+                control={control}
+                {...register("kind")}
+            >
                 <option value="Tin tức">Tin tức</option>
                 <option value="Dịch vụ">Dịch vụ</option>
             </select>

@@ -23,7 +23,7 @@ const Box1 = () => {
                 <div className="mt-8">
                     <Link
                         href="/contact"
-                        className="bg-white text-primary font-bold text-2xl p-4 rounded-sm"
+                        className="bg-white text-primary font-bold text-2xl p-4 rounded-md"
                     >
                         Đặt lịch khám
                     </Link>

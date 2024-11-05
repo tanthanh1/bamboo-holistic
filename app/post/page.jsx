@@ -10,7 +10,7 @@ import Script from "next/script";
 
 const PostPage = () => {
     return (
-        <div className="bg-secondary py-10">
+        <div className="bg-secondary py-10 px-8">
             <NewsForm />
             <Script
                 src="https://widget.cloudinary.com/v2.0/global/all.js"

@@ -1,7 +1,11 @@
 import connectDB from "@/config/database";
 import New from "@/models/New";
 
+export const revalidate = 60
 export const dynamic = "force-dynamic";
+export const fetchCache = 'force-no-store' 
+
+
 export const GET = async (request, { params }) => {
     try {
         await connectDB();

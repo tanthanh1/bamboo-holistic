@@ -1,5 +1,5 @@
 function addListStyle(htmlString) {
-    return htmlString.replace(/<ul>/g, '<ul class="list-disc">');
+    return htmlString.replace(/<ul>/g, '<ul class="list-disc ml-8">');
 }
 
 function getImageSrc(inputString) {

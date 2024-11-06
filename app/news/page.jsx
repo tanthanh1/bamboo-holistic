@@ -6,6 +6,10 @@ import { useParams } from "next/navigation";
 import { useState, useEffect } from "react";
 import Spinner from "@/components/Spinner";
 
+export const revalidate = 60;
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
+
 const NewsPage = () => {
     const [news, setNews] = useState(null);
     const [loading, setLoading] = useState(true);

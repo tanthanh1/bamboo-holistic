@@ -3,7 +3,7 @@ import New from "@/models/New";
 
 export const revalidate = 60;
 export const dynamic = "force-dynamic";
-export const fetchCache = "force-no-store";
+
 export const POST = async (request) => {
     try {
         await connectDB();

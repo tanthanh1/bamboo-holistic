@@ -1,7 +1,7 @@
 "use client";
 import { useForm, useController } from "react-hook-form";
 
-import { Button } from "@mui/material";
+import { Button, Select, MenuItem } from "@mui/material";
 import { Box } from "@mui/system";
 import { EditorField } from "@/components/form/EditorField.tsx";
 import InputField from "@/components/form/InputField";
@@ -67,6 +67,17 @@ const NewsForm = () => {
                 <option value="Tin tức">Tin tức</option>
                 <option value="Dịch vụ">Dịch vụ</option>
             </select>
+            {/* 
+            <Select
+                labelId="demo-simple-select-label"
+                id="demo-simple-select"
+                label="Age"
+                value="Tin tức"
+            >
+                <MenuItem value="Tin tức">Tin tức</MenuItem>
+                <MenuItem value="Dịch vụ">Dịch vụ</MenuItem>
+            </Select> */}
+
             <label className="block" htmlFor="">
                 Tiêu Đề:{" "}
             </label>
@@ -93,7 +104,9 @@ const NewsForm = () => {
                 label="Nội dung bài viết"
             />
 
-            <Button type="submit">Upload</Button>
+            <Button variant="contained" type="submit">
+                Upload
+            </Button>
         </Box>
     );
 };

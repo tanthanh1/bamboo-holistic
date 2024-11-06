@@ -1,6 +1,7 @@
 import connectDB from "@/config/database";
 import New from "@/models/New";
 
+export const dynamic = "force-dynamic";
 export const POST = async (request) => {
     try {
         await connectDB();

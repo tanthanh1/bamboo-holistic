@@ -15,7 +15,12 @@ async function fetchTickets() {
 
 async function fetchNews() {
     try {
-        const res = await fetch(`${apiDomain}/news`, { cache: "no-store" });
+        // const res = await fetch(`${apiDomain}/news`, { cache: "no-store" });
+        const res = await fetch(`${apiDomain}/news`, {
+            next: {
+                revalidate: 60, // 1 hour
+            },
+        });
         if (!res.ok) {
             throw new Error("Failed to fetch data");
         }

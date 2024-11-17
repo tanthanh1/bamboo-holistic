@@ -6,7 +6,6 @@ import { Control, FieldValues, Path, useController } from "react-hook-form";
 import ReactQuill, { ReactQuillProps } from "react-quill";
 import "react-quill/dist/quill.snow.css";
 
-
 interface ReactQuillWrapperProps extends ReactQuillProps {
     forwardedRef: LegacyRef<ReactQuill>;
 }
@@ -14,7 +13,6 @@ interface ReactQuillWrapperProps extends ReactQuillProps {
 const ReactQuillWrapper = dynamic(
     async () => {
         const { default: RQ } = await import("react-quill");
-
 
         const Component = ({
             forwardedRef,

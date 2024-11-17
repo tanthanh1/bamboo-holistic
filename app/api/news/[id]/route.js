@@ -19,3 +19,36 @@ export const GET = async (request, { params }) => {
         return new Response("Something Went Error", { status: 500 });
     }
 };
+
+export const PUT = async (request, { params }) => {
+    try {
+        await connectDB();
+
+        const formData = await request.formData();
+        const { id } = params;
+        console.log("params id", id);
+
+        const newData = {
+            title: formData.get("title"),
+            content: formData.get("content"),
+            image_url: formData.get("image_url"),
+            short_desc: formData.get("short_desc"),
+        };
+
+        const updatedProperty = await New.findByIdAndUpdate(
+            id.toString(),
+            newData,
+            {
+                new: true,
+                upsert: false,
+            }
+        );
+        //const property = await New.findById(params.id);
+        return new Response(JSON.stringify(updatedProperty), {
+            status: 200,
+        });
+    } catch (error) {
+        console.log(error);
+        return new Response("Something Went Error", { status: 500 });
+    }
+};

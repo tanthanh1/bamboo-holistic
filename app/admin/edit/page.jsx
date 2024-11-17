@@ -1,5 +1,6 @@
 "use client";
 import { useParams } from "next/navigation";
+import { toast } from "react-toastify";
 
 import { useState, useEffect } from "react";
 import { fetchNews } from "@/utils/requests";
@@ -16,9 +17,13 @@ const page = () => {
 
         if (!confirmed) return;
 
-        const response = await fetch(`/api/news/${id}`, {
+        const res = await fetch(`/api/news/${id}`, {
             method: "DELETE",
         });
+
+        if (res.status === 200) {
+            toast.success("Deleted");
+        }
         console.log("deleted");
     };
 

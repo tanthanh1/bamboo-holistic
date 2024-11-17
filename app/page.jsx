@@ -6,13 +6,13 @@ import News from "@/components/home/News";
 
 const HomePage = () => {
     return (
-        <div>
+        <>
             <Box1 />
             <Box2 />
             <Box3 />
             <Box4 />
             <News />
-        </div>
+        </>
     );
 };
 export default HomePage;

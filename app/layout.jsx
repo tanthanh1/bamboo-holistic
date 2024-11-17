@@ -27,3 +27,5 @@ const MainLayout = ({ children }) => {
     );
 };
 export default MainLayout;
+
+export const fetchCache = "force-cache";

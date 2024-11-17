@@ -17,7 +17,7 @@ const ContactPage = () => {
                         encType="multipart/form-data"
                         className=""
                     >
-                        <div class="mb-5">
+                        <div className="mb-5">
                             <input
                                 type="text"
                                 id="name"
@@ -28,31 +28,31 @@ const ContactPage = () => {
                             />
                         </div>
 
-                        <div class="mb-5">
+                        <div className="mb-5">
                             <input
                                 type="text"
                                 id="phone"
                                 name="phone"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                 placeholder="Số điện thoại"
                                 required
                             />
                         </div>
-                        <div class="mb-5">
+                        <div className="mb-5">
                             <input
                                 type="email"
                                 id="email"
                                 name="email"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                 placeholder="Email"
                                 required
                             />
                         </div>
-                        <div class="mb-5">
+                        <div className="mb-5">
                             <textarea
                                 id="content"
                                 name="content"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                 placeholder="Vấn đề thắc mắc"
                                 required
                             />
@@ -60,7 +60,7 @@ const ContactPage = () => {
 
                         <button
                             type="submit"
-                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-sm text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-sm text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                         >
                             Gửi tin nhắn
                         </button>
@@ -77,7 +77,7 @@ const ContactPage = () => {
                         lại tin nhắn(email)!
                     </p>
 
-                    <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+                    <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
 
                     <div className="flex gap-2">
                         <Image className="" src={tel} alt="tel" width={50} />

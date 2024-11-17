@@ -20,8 +20,7 @@ const News = () => {
                         <Image
                             className="block mx-auto"
                             src={image3}
-                            al
-                            t="Picture of the author"
+                            alt="Picture of the author"
                         />
                     </Link>
                     <p className="text-center mt-4">Tê yếu cánh tay </p>

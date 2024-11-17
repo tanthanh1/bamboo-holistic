@@ -16,7 +16,7 @@ const AboutPage = () => {
             </div>
             <div className="bg-secondary mb-4 pb-8 relative before:content-[''] before:bg-secondary  before:absolute before:h-full before:w-[200vw] before:left-[-100vw] before:z-[-1]">
                 <div className="flex flex-col lg:flex-row lg:gap-5 max-w-[1080px]  lg:mx-auto pt-20">
-                    <Image className="flex-1" src={image1} />
+                    <Image className="flex-1" src={image1} alt="" />
                     <div className="flex-1">
                         <h1
                             className={`${inter.className} text-2xl font-bold mt-4 lg:mt-0`}
@@ -43,7 +43,7 @@ const AboutPage = () => {
                     </div>
                 </div>
                 <div className=" max-w-[1080px] lg:mx-auto pt-20 ">
-                    <Image src={image2} />
+                    <Image src={image2} alt="image 2" />
                     <p className="mt-6">
                         Một số trường phái trị liệu Y học tự nhiên đang được sử
                         dụng rộng rãi hiện nay trên thế giới như:
@@ -85,7 +85,7 @@ const AboutPage = () => {
                         </li>
                     </ul>
 
-                    <Image className="mt-6" src={image3} />
+                    <Image className="mt-6" src={image3} alt="" />
                     <p className="mt-6">
                         Và hiện nay, tại Bamboo Holistic chúng tôi phối hợp sử
                         dụng các trường phái trị liệu Y học tự nhiên khác nhau

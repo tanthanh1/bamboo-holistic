@@ -48,7 +48,10 @@ const NewsPage = () => {
                             </p>
                             <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-20">
                                 {news.map((ticket) => (
-                                    <div className="flex flex-col border-b-2 pb-8 lg:border-b-0 lg:pb-0">
+                                    <div
+                                        key={ticket._id}
+                                        className="flex flex-col border-b-2 pb-8 lg:border-b-0 lg:pb-0"
+                                    >
                                         <div>
                                             <Image
                                                 className="mx-auto lg:mx-0"

@@ -35,14 +35,10 @@ export const PUT = async (request, { params }) => {
             short_desc: formData.get("short_desc"),
         };
 
-        const updatedProperty = await New.findByIdAndUpdate(
-            id.toString(),
-            newData,
-            {
-                new: true,
-                upsert: false,
-            }
-        );
+        const updatedProperty = await New.findByIdAndUpdate(id, newData, {
+            new: true,
+            upsert: false,
+        });
         //const property = await New.findById(params.id);
         return new Response(JSON.stringify(updatedProperty), {
             status: 200,
@@ -50,5 +46,29 @@ export const PUT = async (request, { params }) => {
     } catch (error) {
         console.log(error);
         return new Response("Something Went Error", { status: 500 });
+    }
+};
+
+export const DELETE = async (request, { params }) => {
+    try {
+        const id = params.id;
+
+        await connectDB();
+
+        const property = await New.findById(id);
+
+        if (!property)
+            return new Response("Property Not Found", { status: 404 });
+
+        // Verify ownership
+
+        await property.deleteOne();
+
+        return new Response("Deleted", {
+            status: 200,
+        });
+    } catch (error) {
+        console.log(error);
+        return new Response("Something Went Wrong", { status: 500 });
     }
 };

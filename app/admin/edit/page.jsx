@@ -11,6 +11,17 @@ const page = () => {
     const [news, setNews] = useState(null);
     const [loading, setLoading] = useState(true);
 
+    const handleDelete = async (id) => {
+        const confirmed = window.confirm("Are you sure you want to delete?");
+
+        if (!confirmed) return;
+
+        const response = await fetch(`/api/news/${id}`, {
+            method: "DELETE",
+        });
+        console.log("deleted");
+    };
+
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -45,7 +56,10 @@ const page = () => {
                             >
                                 Edit
                             </Link>
-                            <button className="bg-red-400 text-white px-4 py-1 rounded-sm ">
+                            <button
+                                className="bg-red-400 text-white px-4 py-1 rounded-sm"
+                                onClick={() => handleDelete(x._id)}
+                            >
                                 Delete
                             </button>
                         </div>

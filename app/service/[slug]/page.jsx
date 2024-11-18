@@ -30,7 +30,7 @@ const page = () => {
     // console.log("service: ", property);
 
     if (!property && !loading) {
-        return <h1>Không tìm thấy</h1>;
+        return <h1>Not Found</h1>;
     }
 
     return (

@@ -32,7 +32,7 @@ const page = () => {
     return (
         <div className="bg-secondary py-10 px-8">
             {loading && <div>Loading</div>}
-            {!loading && property && <EditForm property={property} id={id}/>}
+            {!loading && property && <EditForm property={property} id={id} />}
 
             <Script
                 src="https://widget.cloudinary.com/v2.0/global/all.js"
@@ -42,3 +42,5 @@ const page = () => {
     );
 };
 export default page;
+
+export const dynamic = "force-dynamic";

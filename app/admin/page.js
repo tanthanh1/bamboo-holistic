@@ -25,3 +25,5 @@ const AdminPage = async () => {
     );
 };
 export default AdminPage;
+
+export const dynamic = "force-dynamic";

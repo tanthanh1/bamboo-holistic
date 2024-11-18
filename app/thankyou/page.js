@@ -14,3 +14,5 @@ const ThankYouPage = () => {
     );
 };
 export default ThankYouPage;
+
+export const dynamic = "force-dynamic";

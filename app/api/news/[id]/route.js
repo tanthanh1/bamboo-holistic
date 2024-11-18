@@ -72,5 +72,3 @@ export const DELETE = async (request, { params }) => {
         return new Response("Something Went Wrong", { status: 500 });
     }
 };
-
-export const dynamic = "force-dynamic";

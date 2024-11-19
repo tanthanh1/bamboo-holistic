@@ -15,7 +15,7 @@ const Box3 = () => {
             </h2>
             <div className="flex flex-col lg:flex-row gap-10 mt-8 ">
                 <div className="flex-1 bg-white p-10">
-                    <Link href="/service/6719b6425993be44a6bcb09c">
+                    <Link href="/service/673c0113fc2d5c3307d0190b">
                         <Image
                             className="block mx-auto"
                             src={image3}
@@ -26,7 +26,7 @@ const Box3 = () => {
                     <p className="text-center mt-4">Đau thần kinh toạ </p>
                 </div>
                 <div className="flex-1 bg-white p-10">
-                    <Link href="/service/6719b8f349202842cc8e57ca">
+                    <Link href="/service/673bfb9fab145ab4293ad1ab">
                         <Image
                             className="block mx-auto"
                             src={image4}
@@ -37,7 +37,7 @@ const Box3 = () => {
                     <p className="text-center mt-4">Đau cổ vai gáy</p>
                 </div>
                 <div className="flex-1 bg-white p-10">
-                    <Link href="/service/6719bc89f1c0bee836ad322d">
+                    <Link href="/service/673c03ab35004991a4c3f3f9">
                         <Image
                             className="block mx-auto"
                             src={image5}

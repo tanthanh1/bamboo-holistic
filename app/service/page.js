@@ -53,7 +53,7 @@ const page = () => {
 
                                     <div className="mt-4 text-center">
                                         <Link
-                                            href="/service/6719b8f349202842cc8e57ca"
+                                            href="/service/673bfb9fab145ab4293ad1ab"
                                             className="bg-primary text-white font-semibold  px-8 py-2 rounded-md"
                                         >
                                             Xem Tiếp
@@ -92,7 +92,7 @@ const page = () => {
 
                                     <div className="mt-4 text-center">
                                         <Link
-                                            href="/service/6719b78e5993be44a6bcb09e"
+                                            href="/service/673bfeb96781b9d0b1d73ef6"
                                             className="bg-primary text-white font-semibold  px-8 py-2 rounded-md"
                                         >
                                             Xem Tiếp
@@ -127,7 +127,7 @@ const page = () => {
 
                                     <div className="mt-4 text-center">
                                         <Link
-                                            href="/service/6719b6425993be44a6bcb09c"
+                                            href="/service/673c0113fc2d5c3307d0190b"
                                             className="bg-primary text-white font-semibold  px-8 py-2 rounded-md"
                                         >
                                             Xem Tiếp
@@ -162,7 +162,7 @@ const page = () => {
 
                                     <div className="mt-4 text-center">
                                         <Link
-                                            href="/service/6719ba94a5cdcc74fdc55f26"
+                                            href="/service/673c028835004991a4c3f3f7"
                                             className="bg-primary text-white font-semibold  px-8 py-2 rounded-md"
                                         >
                                             Xem Tiếp
@@ -199,7 +199,7 @@ const page = () => {
 
                                     <div className="mt-4 text-center">
                                         <Link
-                                            href="/service/6719bc89f1c0bee836ad322d"
+                                            href="/service/673c03ab35004991a4c3f3f9"
                                             className="bg-primary text-white font-semibold  px-8 py-2 rounded-md"
                                         >
                                             Xem Tiếp
@@ -237,7 +237,7 @@ const page = () => {
 
                                     <div className="mt-4 text-center">
                                         <Link
-                                            href="/service/6719be9fc5353d1b404c45f2"
+                                            href="/service/673c04ba35004991a4c3f3fb"
                                             className="bg-primary text-white font-semibold  px-8 py-2 rounded-md"
                                         >
                                             Xem Tiếp

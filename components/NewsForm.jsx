@@ -7,6 +7,7 @@ import { EditorField } from "@/components/form/EditorField.tsx";
 import InputField from "@/components/form/InputField";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import { toast } from "react-toastify";
 
 import { getImageSrc, addListStyle } from "@/utils/other.js";
 // import TextEditor from "@/components/form/TextEditor.tsx";
@@ -31,11 +32,14 @@ const NewsForm = () => {
             payload.forEach((value, key) => {
                 console.log(key, value);
             });
-            const response = await fetch("/api/news", {
+            const res = await fetch("/api/news", {
                 method: "POST",
 
                 body: payload,
             });
+            if (res.status === 200) {
+                toast.success("Success");
+            }
         } else {
             const payload = new FormData();
             payload.set("title", formValues.title);

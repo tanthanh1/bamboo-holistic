@@ -4,6 +4,8 @@ import "@/assets/styles/globals.css";
 import Navbar from "@/components/Navbar";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const metadata = {
     title: "Bamboo Holistic",
@@ -22,6 +24,7 @@ const MainLayout = ({ children }) => {
                 </main>
                 <Contact />
                 <Footer />
+                <ToastContainer />
             </body>
         </html>
     );
